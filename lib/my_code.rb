@@ -10,17 +10,17 @@ result
 end
 
 def reduce (source_array, starting_val= nil)
+i= 0 
   if starting_val
   total = starting_val
   else 
-  total = 0   
+  total = source_array[i]   
   end
-  i= 0 
     while i < source_array.size do
     total = yield(total, source_array[i])  
     i += 1
     end
-  total   
+total   
 end 
 
 
