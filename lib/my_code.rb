@@ -14,7 +14,7 @@ i= 0
   if starting_val
   total = starting_val
   else 
-  total = true    
+  total = 0    
   end
     while i < source_array.size do
     total = yield(total, source_array[i])  
