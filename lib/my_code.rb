@@ -20,7 +20,7 @@ i= 0
   end
   
     while i < source_array.size do
-    total = yield(sum, source_array[i])  
+    total = yield(total, source_array[i])  
     i += 1
     end
 total   
